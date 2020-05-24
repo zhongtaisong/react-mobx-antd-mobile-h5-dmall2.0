@@ -1,0 +1,31 @@
+.Stepper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 116px !important;
+    height: 30px;
+    .am-stepper-handler-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        z-index: 55;
+        span {
+            border: 0 none;
+            background: #F7F7F7;
+            border-radius: 3px;
+            .am-icon {
+                vertical-align: middle;
+            }
+        }
+    }
+    .am-stepper-input-wrap {
+        width: 48px;
+        background: #F7F7F7;
+        position: relative;
+        z-index: 66;
+        .am-stepper-input {
+            width: 100%;
+        }
+    }
+}

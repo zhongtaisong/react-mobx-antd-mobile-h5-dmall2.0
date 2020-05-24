@@ -1,0 +1,152 @@
+@import '~@com/index.less';
+
+.dm_MyOrder {
+    width: 100%;
+    background: #fff;
+    .dm_MyOrder_ListView {
+        .dm_MyOrder_ListView_row {
+            padding: 0 1rem;
+            .dm_MyOrder_ListView_row_content {
+                display: -webkit-box;
+                display: flex;
+                padding: 1rem 0;
+                >img {                    
+                    height: 7rem;
+                    margin-right: 1rem;
+                }
+                .content {
+                    width: 100%;
+                    overflow: hidden;
+                    .description {
+                        font-size: 14px;
+                        word-break: break-all;
+                        line-height: 1.6rem;
+                        .ellipsis_more(2);
+                    }
+                    .spec_list {
+                        line-height: 1.2rem;
+                        color: @font-color-555;
+                        padding: .2rem 0;
+                    }
+                    .price {                        
+                        display: flex;
+                        align-items: baseline;
+                        font-size: 12px;
+                        color:@font-color-555;
+                        padding: .6rem 0;
+                        span {
+                            font-size: 14px;
+                            margin: 0 .4rem 0 .2rem;
+                        }
+                        i {
+                            font-style: normal;
+                        }
+                    }
+                }
+            }
+            .bottom_btns {
+                .p_info {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    >span {
+                        margin-right: .6rem;
+                    }
+                    >div {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        span + span {
+                            font-size: 12px;
+                            margin-right: .2rem;
+                        }
+                        i {
+                            font-style: normal;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .btns {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin: 1rem 0;
+                    a {
+                        margin-left: 1rem;
+                        height: 2.5rem;
+                        line-height: 2.5rem;
+                        span {
+                            vertical-align: bottom;
+                        }
+                    }
+                }
+            }
+        }
+        .dm_MyOrder_ListView_row_content_line {
+            border-bottom: 0.6rem solid @body-color;
+        }
+    }
+}
+.dm_MyOrder_modal {
+    .modal_main_content {        
+        .p_details {
+            padding: 0 1rem;
+            border-bottom: 1px solid @body-color;
+            background: #fff;
+            .dm_OrderDetails_content {
+                display: -webkit-box;
+                display: flex;
+                padding: 1rem 0;
+                >img {                    
+                    height: 7rem;
+                    margin-right: 1rem;
+                }
+                .content {
+                    width: 100%;
+                    overflow: hidden;
+                    text-align: left;
+                    .description {
+                        font-size: 14px;
+                        word-break: break-all;
+                        line-height: 1.6rem;
+                        color: #000;
+                        .ellipsis_more(2);
+                    }
+                    .spec_list {
+                        line-height: 1.2rem;
+                        color: @font-color-555;
+                        padding: .2rem 0;
+                    }
+                    .price_and_btn {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: .4rem 0;
+                        .price {                        
+                            display: flex;
+                            align-items: baseline;
+                            font-size: 12px;
+                            color:@font-color-555;
+                            padding: .6rem 0;
+                            span {
+                                font-size: 14px;
+                                margin: 0 .4rem 0 .2rem;
+                            }
+                            i {
+                                font-style: normal;
+                            }
+                        }
+                        a {
+                            margin-left: 1rem;
+                            height: 2.5rem;
+                            line-height: 2.5rem;
+                            span {
+                                vertical-align: bottom;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

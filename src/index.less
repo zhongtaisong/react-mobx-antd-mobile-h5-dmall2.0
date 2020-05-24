@@ -1,0 +1,198 @@
+@import '~@com/index.less';
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: '微软雅黑', 'Microsoft YaHei';
+	font-size: 12px;
+	// font-size: 100%;
+	// font: inherit;
+	// vertical-align: baseline;
+	vertical-align: middle;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    box-sizing: border-box;
+    background-color: @body-color !important;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.dm_App {
+    width: 100%;
+    .common_width {
+        width: 1100px;
+        margin: 0 auto;
+        // overflow: hidden;
+    }
+}
+// 表格
+.ant-table {
+    color: #666 !important;
+}
+// 下拉菜单
+.ant-select-dropdown-menu-item {
+    font-size: 12px !important;
+}
+// ￥
+.unit {
+    font-size: 14px;
+}
+// 单行不换行溢出显示省略号
+.ellipsis {
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+a {
+    color: inherit;
+}
+* {
+    // &:not(.ant-radio-inner) {
+    //     border-radius: 2px !important;
+    // }
+    // border-radius: 2px !important;
+    touch-action: pan-y;
+}
+// 输入框 - 禁用
+.ant-input[disabled] {
+    color: inherit;
+    cursor: text;
+}
+// 下拉框 - 禁用
+.ant-select-disabled {
+    color: inherit;
+    .ant-select-selection {
+        cursor: text;
+    }
+}
+// 数字输入框 - 禁用
+.ant-input-number-disabled {
+    color: inherit;
+    cursor: text;
+}
+// 多选框 - 禁用
+.ant-checkbox-disabled + span {
+    color: inherit;
+    cursor: text;
+}
+.ant-form-item-with-help {
+    margin-bottom: 0 !important;
+}
+// 多选框
+.ant-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    span + span {
+        padding-bottom: 2px;
+    }
+}
+// 背景
+.common_bg {
+    background: #fff;
+    border: solid 1px #e6e6e6;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+.ant-upload.ant-upload-select-picture-card {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+// 折叠面板 - 标题
+.ant-collapse {
+    .ant-collapse-header {
+        font-size: 13px;
+        padding: 8px 16px 8px 40px !important;
+    }
+}
+// 表格内容左对齐
+td.columns_left {
+    text-align: left !important;
+}
+// 抽屉表单
+.drawer_form {
+    .ant-form-item {
+        display: flex;
+        padding: 2px 0;
+        .ant-form-item-label {
+            width: 90px;
+            padding-right: 4px;
+            label {
+                font-size: 12px;
+            }
+        }
+        .ant-form-item-control-wrapper {
+            flex: 1;            
+            .ant-input {
+                font-size: 12px;
+            }
+            .ant-switch {
+                border-radius: 100px !important;
+            }
+        }
+        // 单选按钮
+        &.radios {
+            padding: 0;
+            .ant-form-item-control-wrapper {
+                display: flex;
+                align-items: center;
+                .ant-form-item-control {
+                    line-height: inherit;
+                    .ant-radio-group {
+                        display: flex;
+                        .ant-radio {
+                            vertical-align: middle;
+                            .ant-radio-inner {
+                                border-radius: 50% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 下拉菜单
+        &.selects {
+            .ant-form-item-control {
+                line-height: 35px;
+            }
+        }
+    }
+}
+.err_tip {
+    font-size: 14px;
+    color: red;
+    padding: 1rem;
+    text-align: left;
+}

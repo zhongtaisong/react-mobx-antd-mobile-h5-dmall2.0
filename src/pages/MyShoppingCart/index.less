@@ -1,0 +1,241 @@
+@import '~@com/index.less';
+
+.dm_cart {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    .empty_cart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2.6rem;
+        font-size: 14px;
+        color: @font-color-555;
+        img {
+            width: 2.6rem;
+            height: auto;
+            margin-right: 0.8rem;
+        }
+    }
+    .dm_cart_header {
+        padding: 0.96rem 1rem .4rem;
+        position: sticky;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        background: #fff;
+        border-bottom: 1px solid @body-color;
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1 {
+                font-size: 20px;
+                .am-icon {
+                    vertical-align: sub;
+                    margin-right: .4rem;
+                    margin-left: .26rem;
+                }
+            }
+            span {
+                font-size: 15px;
+            }
+        }
+        .bottom {
+            width: 100%;
+            line-height: 3rem;
+            display: flex;
+            span {
+                color: @font-color-555;
+                display: inline-block;
+                &:first-child {
+                    flex: 1;
+                }
+                &:last-child {
+                    flex: 3;
+                }
+            }
+        }
+    }
+    .dm_cart_footer {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        // bottom: 50px;
+        z-index: 99;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        border-top: 1px solid @body-color;
+        height: 3.5rem;
+        line-height: 3.5rem;
+        overflow: hidden;
+        .left {
+            .am-checkbox-agree-label {
+                font-size: 14px;
+                margin-top: -1px;
+                .am-checkbox {
+                    .am-checkbox-inner {
+                        top: 8px;
+                    }
+                }
+            }
+        }
+        .right {
+            &.right_manage {
+                justify-content: flex-end;
+            }
+            flex: 1;
+            max-width: 70%;
+            height: 100%;
+            display: flex;
+            span {
+                display: inline-block;
+                flex: 1;
+                text-align: right;
+                font-size: 14px;
+                padding-right: 1rem;
+                i {
+                    font-style: normal;
+                    font-weight: bold;
+                    color: @main-color;
+                    font-size: inherit;
+                }
+            }
+            >i {
+                min-width: 8rem;
+                height: 100%;
+                color: #fff;
+                font-style: normal;
+                font-size: 14px;
+                text-align: center;
+                &:first-child {
+                    background: @main-color;
+                }
+                &:last-child {
+                    background: @main-color-dark;
+                }
+            }
+        }
+    }
+    .dm_cart_ListView {
+        height: 100vh;
+        .am-list-body {
+            &:before, &:after {
+                height: 0;
+            }
+            .dm_cart_ListView_row {
+                &.am-list-item-active {
+                    background: @body-color;
+                }
+                .am-list-thumb {
+                    margin-right: .4rem;
+                }
+                .am-list-content {
+                    white-space: normal;
+                    .dm_cart_ListView_row_content {
+                        display: -webkit-box;
+                        display: flex;
+                        >img {                    
+                            width: auto;
+                            height: 7rem;
+                            margin-right: 1rem;
+                        }
+                        .content {
+                            line-height: 1;
+                            .description {
+                                font-size: 14px;
+                                word-break: break-all;
+                                line-height: 1.6rem;
+                                .ellipsis_more(2);
+                            }
+                            .spec_list {
+                                padding: .2rem .3rem 0.2rem .6rem;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                background: @body-color;
+                                color: @font-color-555;
+                                span {
+                                    flex: 1;
+                                    line-height: 1.4rem;
+                                    word-break: break-all;
+                                }
+                                .am-icon {
+                                    width: 1.3rem;
+                                }
+                            }
+                            .price_number {
+                                padding: .6rem 0;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                .price {
+                                    display: flex;
+                                    align-items: baseline;
+                                    font-size: 12px;
+                                    color: @main-color;
+                                    span {
+                                        font-size: 16px;
+                                        padding-left: .2rem;
+                                    }
+                                }
+                                .p_number {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 2rem;
+                                    .nbr {
+                                        width: 2rem;
+                                        height: 100%;
+                                        line-height: 2rem;
+                                        font-size: 14px;
+                                        font-weight: bold;
+                                        text-align: center;
+                                        background: @body-color;
+                                        .nbr_disabled {
+                                            background: #fff;
+                                        }
+                                    }
+                                    .am-list-item.am-input-item {
+                                        height: 100%;
+                                        min-height: 100%;
+                                        padding-left: 0;
+                                        background: @body-color;
+                                        margin: 0 .2rem;
+                                        .am-list-line {
+                                            padding-right: 0;
+                                            input {
+                                                font-size: 12px;
+                                                width: 3rem;
+                                                text-align: center;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }            
+        }
+        .dm_cart_ListView_row_content_line {
+            border-bottom: 1px solid @body-color;
+        }
+    }
+}
+.dm_cart_active_spec {
+    .am-action-sheet-button-list-item {
+        font-size: 13px;
+        height: auto;
+        line-height: 3.6rem;
+        &:last-child {
+            font-size: 16px;
+        }
+    }
+    .dm_cart_showActionSheet_active {
+        background: @main-color;
+        color: #fff;
+    }
+}

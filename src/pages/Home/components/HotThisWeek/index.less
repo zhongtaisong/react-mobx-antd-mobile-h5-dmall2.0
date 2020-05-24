@@ -1,0 +1,64 @@
+@import '~@com/index.less';
+
+.dm_HotThisWeek {
+    .title {
+        text-align: center;
+        font-size: 16px;
+        padding: 1rem;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 6%;
+            height: auto;
+            margin-right: .2rem;
+        }
+    }
+    .am-grid {
+        background: #fff;
+        padding-bottom: 2rem;
+        min-height: 384px;
+        .slider-decorator-0 {
+            bottom: -2rem !important;
+            background: #fff;
+            border-top: 1px solid #F7F7F7;
+        }
+        .am-grid-item-content {
+            .dm_HotThisWeek_products {
+                height: inherit;
+                padding: 0 1rem;
+                background: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                img {
+                    width: 70%;
+                }
+                div {
+                    text-align: left;
+                    span {
+                        text-align: left;
+                        word-break: break-all;
+                        line-height: 1.4rem;
+                        font-size: 13px;
+                        .ellipsis_more(2);
+                        // padding-bottom: .2rem;
+                    }
+                    p {
+                        font-size: 15px;
+                        padding: .4rem 0;
+                        font-weight: 700;
+                        &:before {
+                            content: '￥';
+                            font-size: 12px;
+                            color: @main-color;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+// 主色调
+@main-color: #1890ff;// 主色调
+@main-color-dark: #0e80d2; //主色调 - 深色
+// body颜色
+@body-color: #f0f0f0;
+
+// 文字颜色
+@font-color-blue: #1890ff;
+@font-color-white: #fff;
+@font-color-555: #555;
+
+// 背景颜色
+@bg-color-blue: #1890ff;
+@bg-color-white: #fff;
+@bg-color-555: #555;
+
+// 多行溢出显示省略号
+.ellipsis_more(@num: 2) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @num;
+    overflow: hidden;
+}

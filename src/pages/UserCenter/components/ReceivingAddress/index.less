@@ -1,0 +1,60 @@
+@import '~@com/index.less';
+
+.dm_ReceivingAddress {
+    .main_content {
+        .am-list-body {
+            &:before {
+                height: 0;
+            }
+            .am-list-content {
+                .address_info {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    span {
+                        font-size: 14px;
+                        margin-right: 0.6rem;
+                    }
+                }
+                .am-list-brief {
+                    font-size: 12px;
+                    margin-top: 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: .2rem 0;
+                    i {
+                        background: @main-color;
+                        color: #fff;
+                        font-style: normal;
+                        padding: 0 .4rem;
+                        margin-right: .6rem;
+                    }
+                }
+            }
+            .am-list-extra {
+                span {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+.dm_ReceivingAddress_modal {    
+    form {
+        .am-list-line {
+            .am-input-label {
+                font-size: 16px;
+            }
+            .am-input-control {
+                input {
+                    font-size: 16px;
+                }
+            }
+        }
+        .err_tip {
+            padding: 0 1rem;
+            background: #fff;
+        }
+    }
+}

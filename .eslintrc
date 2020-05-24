@@ -1,0 +1,27 @@
+{
+    // 解析器，用于解析代码
+    "parser": "babel-eslint",
+    // 解析器配置
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    // off 或 0：表示不验证规则。
+    // warn 或 1：表示验证规则，当不满足时，给警告。
+    // error或 2 ：表示验证规则，不满足时报错。
+    "rules": {
+        "for-direction": "error",
+        "no-dupe-args": "error",
+        "no-dupe-keys": "error",
+        "no-duplicate-case": "error",
+        "camelcase": "error",
+        "no-tabs": "off",
+        "no-console": "off",
+        "no-alert": "error",
+        "no-const-assign": "error",
+        "no-var": "off",
+        "no-spaced-func": "error",
+        "semi": ["error", "always"],
+        "eqeqeq": "off"
+    }
+}

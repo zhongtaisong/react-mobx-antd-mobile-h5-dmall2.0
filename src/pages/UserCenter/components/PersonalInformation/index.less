@@ -1,0 +1,28 @@
+@import '~@com/index.less';
+
+.dm_PersonalInformation {
+    form {
+        .am-list {
+            .am-list-body {
+                &:before, &:after {
+                    height: 0;
+                }
+                .am-list-line {
+                    .am-input-label {
+                        font-size: 16px; 
+                    }
+                    .am-input-control {
+                        input {
+                            font-size: 16px;
+                            color: @font-color-555;
+                            text-align: right;
+                        }
+                    }
+                    .am-list-extra {
+                        color: @font-color-555;
+                    }
+                }
+            }
+        }
+    }
+}

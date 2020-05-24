@@ -1,0 +1,183 @@
+@import '~@com/index.less';
+
+.dm_HeaderBar {
+    display: flex;
+    width: 100%;
+    min-height: 44px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background: @body-color;
+    .logo {
+        width: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >img {
+            width: 64%;
+        }
+    }
+    .search_bar {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .am-search {
+            padding: 0;
+            background: @body-color;
+            flex: 1;
+            .am-search-input {
+                border: 1px solid #e5e5e5;
+                .am-search-synthetic-ph {
+                    line-height: 22px;
+                    .am-search-synthetic-ph-container {
+                        >i {
+                            background-size: 14px auto;
+                            background-position: center;
+                            vertical-align: middle;
+                        }
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .am-search-clear {
+                    background-size: 14px auto;
+                }
+            }
+            .am-search-cancel {
+                font-size: 14px;
+                width: 4rem;
+                text-align: center;
+                padding: 0;
+            }
+        }
+        .right_content {
+            width: 48px;
+            font-size: 14px;
+            color: @main-color;
+            text-align: center;
+        }
+    }
+    .search_bar_two {
+        .am-search {
+            padding-left: 0.7rem;
+        }
+    }
+}
+.dm_HeaderBar_navBar {
+    background: @body-color !important;
+    height: 44px !important;
+    border-bottom: 0 none !important;
+    .am-navbar-left {
+        padding-left: 0;
+        width: 48px;
+        justify-content: center;
+        flex: none;
+    }
+    .am-navbar-title {
+        width: calc(100% - 48px);
+        .am-search {
+            width: 100%;
+            padding: 0;
+            background: @body-color;
+            .am-search-input {
+                border: 1px solid #e5e5e5;
+                .am-search-synthetic-ph {
+                    line-height: 22px;
+                    .am-search-synthetic-ph-container {
+                        >i {
+                            background-size: 14px auto;
+                            background-position: center;
+                            vertical-align: middle;
+                        }
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .am-search-clear {
+                    background-size: 14px auto;
+                }
+            }
+            .am-search-cancel {
+                font-size: 14px;
+                width: 4rem;
+                text-align: center;
+                padding: 0;
+            }
+        }
+    }
+    .am-navbar-right {
+        display: none;
+    }
+}
+.modal_main_content {
+    .no_result {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4rem;
+        .icon {
+            background: @body-color;
+            width: 8rem;
+            height: 8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            .am-icon {
+                color: #fff;
+                width: 60%;
+                height: 60%;
+            }
+        }
+        span {
+            line-height: 3rem;
+        }
+    }
+    .listView_row {
+        .listView_row_content {
+            display: -webkit-box;
+            display: flex;
+            padding: 1rem;
+            >img {                    
+                height: 7rem;
+                margin-right: 1rem;
+            }
+            .content {
+                line-height: 1;
+                .description {
+                    font-size: 14px;
+                    word-break: break-all;
+                    line-height: 1.6rem;
+                    .ellipsis_more(2);
+                }
+                .tag_list {
+                    padding: .2rem 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .am-tag {
+                        margin-right: .4rem;
+                        background: @body-color;
+                        overflow: hidden;
+                    }
+                }
+                .price {                        
+                    display: flex;
+                    align-items: baseline;
+                    font-size: 12px;
+                    color: @main-color;
+                    padding: .6rem 0;
+                    span {
+                        font-size: 16px;
+                        padding-left: .2rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,171 @@
+@import '~@com/index.less';
+
+.dm_SettlementPage {
+    width: 100%;
+    .address {
+        .am-list {
+            .am-list-body {
+                &:before {
+                    height: 0;
+                }
+                .am-list-content {
+                    .address_info {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        span {
+                            font-size: 14px;
+                            margin-right: 0.6rem;
+                        }
+                    }
+                    .am-list-brief {
+                        font-size: 12px;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+    .p_details, .common_info {
+        background: #fff;
+    }
+    .p_details {
+        padding: 0 1rem;
+        border-bottom: 1px solid @body-color;
+        .dm_OrderDetails_content {
+            display: -webkit-box;
+            display: flex;
+            padding: 1rem 0;
+            >img {                    
+                height: 7rem;
+                margin-right: 1rem;
+            }
+            .content {
+                width: 100%;
+                overflow: hidden;
+                .description {
+                    font-size: 14px;
+                    word-break: break-all;
+                    line-height: 1.6rem;
+                    .ellipsis_more(2);
+                }
+                .spec_list {
+                    line-height: 1.2rem;
+                    color: @font-color-555;
+                    padding: .2rem 0;
+                }
+                .price {                        
+                    display: flex;
+                    align-items: baseline;
+                    font-size: 12px;
+                    color:@font-color-555;
+                    padding: .6rem 0;
+                    span {
+                        font-size: 14px;
+                        margin: 0 .4rem 0 .2rem;
+                    }
+                    i {
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+    }
+    .common_info {
+        line-height: 2rem;
+        padding: 1rem;
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i {
+                    font-style: normal;
+                }
+            }
+            &.common_info_special {
+                span {
+                    color: @main-color;
+                    font-size: 16px;
+                    i {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .bottom_tab_btns {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        height: 50px;
+        line-height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        z-index: 999;
+        div, span {
+            height: 100%;
+            text-align: center;
+            font-size: 16px;
+            overflow: hidden;
+        }
+        span {
+            background: @main-color;
+            color: #fff;
+            width: 40%;
+        }
+        div {
+            max-width: 60%;
+            flex: 1;
+            color: @main-color;
+            font-size: 26px;
+            i {
+                font-style: normal;
+                vertical-align: baseline;
+                font-size: 12px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.dm_SettlementPage_main_content {
+    .am-list {
+        .am-list-body {
+            &:before {
+                height: 0;
+            }
+            .am-list-content {
+                .address_info {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    span {
+                        font-size: 14px;
+                        margin-right: 0.6rem;
+                    }
+                }
+                .am-list-brief {
+                    font-size: 12px;
+                    margin-top: 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: .2rem 0;
+                    i {
+                        background: @main-color;
+                        color: #fff;
+                        font-style: normal;
+                        padding: 0 .4rem;
+                        margin-right: .6rem;
+                    }
+                }
+            }
+        }
+    }
+}

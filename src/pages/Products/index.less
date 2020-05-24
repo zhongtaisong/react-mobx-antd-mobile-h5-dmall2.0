@@ -1,0 +1,107 @@
+@import '~@com/index.less';
+
+.dm_Products {
+    width: 100%;
+    background: #fff;
+    .dm_Products_ListView {
+        .dm_Products_ListView_row {
+            .dm_Products_ListView_row_content {
+                display: -webkit-box;
+                display: flex;
+                padding: 1rem;
+                >img {                    
+                    height: 7rem;
+                    margin-right: 1rem;
+                }
+                .content {
+                    line-height: 1;
+                    .description {
+                        font-size: 14px;
+                        word-break: break-all;
+                        line-height: 1.6rem;
+                        .ellipsis_more(2);
+                    }
+                    .tag_list {
+                        padding: .2rem 0;
+                        .am-tag {
+                            margin-right: .4rem;
+                            background: @body-color;
+                        }
+                    }
+                    .price {                        
+                        display: flex;
+                        align-items: baseline;
+                        font-size: 12px;
+                        color: @main-color;
+                        padding: .6rem 0;
+                        span {
+                            font-size: 16px;
+                            padding-left: .2rem;
+                        }
+                    }
+                }
+            }
+        }
+        .dm_Products_ListView_row_content_line {
+            border-bottom: 1px solid @body-color;
+        }
+    }
+}
+.dm_Products_modal {
+    .dm_Products_modal_content {
+        width: 100%;
+        height: calc(100% - 96px);
+        overflow: scroll;
+        .am-list {
+            .am-list-body {
+                &:before {
+                    height: 0;
+                }
+                &:after {
+                    // height: 1rem;
+                    background: @body-color;
+                }
+                .title {
+                    .am-list-content {
+                        font-size: 16px;
+                    }
+                }
+                .content {
+                    .am-list-content {
+                        .am-tag {
+                            width: calc(100% / 3);
+                            .am-tag-text {
+                                font-size: inherit;
+                            }
+                        }
+                    }
+                }
+                .clear_filter {
+                    .am-list-content {
+                        font-size: 14px;
+                        color: @font-color-555;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .am-modal-footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 999;
+        background: #fff;
+        a {
+            font-size: 16px;
+        }
+        a + a {
+            background: @main-color;
+            color: #fff;
+            &:before {
+                height: 0;
+            }
+        }
+    }
+}
