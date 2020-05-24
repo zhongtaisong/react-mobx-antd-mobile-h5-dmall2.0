@@ -44,13 +44,11 @@ npm run start (需运行express-server-dmall服务)
 - [x] 登录注册 -- 完成
 - [x] 商品搜索 -- 完成
 - [x] 商品筛选 -- 完成
-- [x] 网站留言 -- 完成
 - [x] 我的订单 -- 完成
 - [x] 商品收藏 -- 完成
 - [x] 用户中心 -- 完成
 - [x] 购物车 -- 完成
 - [x] 商品详情 -- 完成
-- [x] 商城后台 -- 完成
 
 
 # 部分截图
@@ -60,7 +58,7 @@ npm run start (需运行express-server-dmall服务)
 
 <img src="https://github.com/zhong-tsong/react-h5-dmall/blob/master/preview/products.png"/>
 
-<img src="https://github.com/zhong-tsong/react-h5-dmall/blob/master/preview/login.png"/>
+<img src="https://github.com/zhong-tsong/react-h5-dmall/blob/master/preview/cart.png"/>
 
 
 # License
