@@ -1,3 +1,4 @@
+import A from './components/a';
 import { action, observable } from 'mobx';
 
 // 接口服务
@@ -13,6 +14,10 @@ class State {
 
     // 获取banner图片
     imgCarouselData = async () => {
+        let a = new A();
+        a.n = 6666666;
+        A.prototype.song = 'pppppppppp';
+        a.zhong();
         const res = await service.imgCarouselData();
         try{
             if( res.data.code === 200 ){

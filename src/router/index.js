@@ -14,6 +14,9 @@ import PersonalInformation from '@pages/UserCenter/components/PersonalInformatio
 import LoginPassword from '@pages/UserCenter/components/LoginPassword';
 import ReceivingAddress from '@pages/UserCenter/components/ReceivingAddress';
 
+// 按需加载
+import asyncComponent from './asyncComponent';
+
 // auth 登录权限
 // noDirectAccess 禁止直接访问
 export default [
@@ -25,19 +28,19 @@ export default [
     { 
         path: '/views/home',
         name: 'Home',
-        component: Home,
+        component: asyncComponent(() => import('@pages/Home')),
         title: '首页'
     },
     { 
         path: '/views/products',
         name: 'Products',
-        component: Products,
+        component: asyncComponent(() => import('@pages/Products')),
         title: '杂货铺'
     },
     { 
         path: '/views/message',
         name: 'Message',
-        component: Message,
+        component: asyncComponent(() => import('@pages/Message')),
         title: '留言'
     },
     { 

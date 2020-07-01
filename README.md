@@ -1,7 +1,7 @@
 
 # 关于
 
-此项目是 react + antd-moblie 构建的h5电商平台，所有的数据都是从[web服务器](https://github.com/zhong-tsong/express-server-dmall) 实时获取的真实数据，具有真实的登录注册、商品搜索/筛选、购物车等功能。
+此项目是 react + antd-moblie 构建的h5电商平台，所有的数据都是从[web服务器](https://github.com/zhong-tsong/nodejs-express-server-dmall2.0) 实时获取的真实数据，具有真实的登录注册、商品搜索/筛选、购物车等功能。
 
 
 # 说明
@@ -12,7 +12,7 @@
 
 >  有问题请直接提 Issues，或者您发现问题并有非常好的解决方案，欢迎 PR 👍
 
->  传送门：[pc](https://github.com/zhong-tsong/react-pc-dmall)  、 [微信小程序](https://github.com/zhong-tsong/taro-wx-dmall)
+>  传送门：[web服务](https://github.com/zhong-tsong/nodejs-express-server-dmall2.0)  、 [taro-微信小程序](https://github.com/zhong-tsong/taro2-mobx-taro-ui-wx-dmall2.0)  、 [vue-pc](https://github.com/zhong-tsong/vue3-vuex-element-ui-pc-dmall2.0)  、 [react-pc](https://github.com/zhong-tsong/react-mobx-antd-pc-dmall2.0)
 
 
 
@@ -25,9 +25,9 @@ react + mobx + react-router + less + axios + antd-moblie
 
 
 ```
-git clone https://github.com/zhong-tsong/react-h5-dmall  
+git clone https://github.com/zhong-tsong/react-mobx-antd-mobile-h5-dmall2.0 
 
-cd react-h5-dmall  
+cd react-mobx-antd-mobile-h5-dmall2.0 
 
 npm install 或 yarn
 
@@ -54,14 +54,14 @@ npm run start (需运行express-server-dmall服务)
 # 部分截图
 
 
-<img src="https://github.com/zhong-tsong/react-h5-dmall/blob/master/preview/home.png"/>
+<img src="https://github.com/zhong-tsong/react-mobx-antd-mobile-h5-dmall2.0/blob/master/preview/home.png"/>
 
-<img src="https://github.com/zhong-tsong/react-h5-dmall/blob/master/preview/products.png"/>
+<img src="https://github.com/zhong-tsong/react-mobx-antd-mobile-h5-dmall2.0/blob/master/preview/products.png"/>
 
-<img src="https://github.com/zhong-tsong/react-h5-dmall/blob/master/preview/cart.png"/>
+<img src="https://github.com/zhong-tsong/react-mobx-antd-mobile-h5-dmall2.0/blob/master/preview/cart.png"/>
 
 
 # License
 
-[MIT](https://github.com/zhong-tsong/react-h5-dmall/blob/master/LICENSE)
+[MIT](https://github.com/zhong-tsong/react-mobx-antd-mobile-h5-dmall2.0/blob/master/LICENSE)
 
